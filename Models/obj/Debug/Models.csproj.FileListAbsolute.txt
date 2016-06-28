@@ -1,0 +1,5 @@
+D:\Brad\Visual Studio 2015\OhmCalc\Models\bin\Debug\OhmCalc.Models.dll
+D:\Brad\Visual Studio 2015\OhmCalc\Models\bin\Debug\OhmCalc.Models.pdb
+D:\Brad\Visual Studio 2015\OhmCalc\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Brad\Visual Studio 2015\OhmCalc\Models\obj\Debug\OhmCalc.Models.dll
+D:\Brad\Visual Studio 2015\OhmCalc\Models\obj\Debug\OhmCalc.Models.pdb

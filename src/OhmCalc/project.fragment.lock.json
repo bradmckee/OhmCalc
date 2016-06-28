@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "exports": {
+    "Models/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.1",
+      "compile": {
+        "bin/Debug/OhmCalc.Models.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/OhmCalc.Models.dll": {}
+      }
+    }
+  }
+}

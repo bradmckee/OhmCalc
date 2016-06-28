@@ -1,0 +1,46 @@
+﻿@model OhmCalc.ViewModel.ViewItems
+
+<div class="ohmContainer">
+    <div class="ohmTitle">
+        Ohm Calculator
+    </div>
+    <div class="row">
+        <label class="field_label" for="m.BandAColor">Color of the first significant figure band (A):</label>
+        @Html.DropDownListFor(m => m.BandAColor, Model.BandAItems, "--Select One--")
+        <a href="#" data-toggle="tooltip" title="Color of the first band signifying the first significant digit" data-placement="right">
+            <img class="helpIcon"src="~/images/help.png" alt="Color Band A Help" />
+        </a>
+    </div>
+    <div class="row">
+        <label class="field_label" for="m.BandBColor">Color of the second significant figure band (B):</label>
+        @Html.DropDownListFor(m => m.BandBColor, Model.BandBItems, "--Select One--")
+        <a href="#" data-toggle="tooltip" title="Color of the second band signifying the second significant digit" data-placement="right">
+            <img class="helpIcon"src="~/images/help.png" alt="Color Band B Help" />
+        </a>
+    </div>
+    <div class="row">
+        <label class="field_label" for="m.BandCColor">Color of the decimal multiplier band (C):</label>
+        @Html.DropDownListFor(m => m.BandCColor, Model.BandCItems, "--Select One--")
+        <a href="#" data-toggle="tooltip" title="Color of the third band signifying the multiplier to be used" data-placement="right">
+            <img class="helpIcon"src="~/images/help.png" alt="Color Band C Help" />
+        </a>
+    </div>
+    <div class="row">
+        <label class="field_label" for="m.BandDColor">Color of the tolerance value band (D):</label>
+        @Html.DropDownListFor(m => m.BandDColor, Model.BandDItems, "--Select One--")
+        <a href="#" data-toggle="tooltip" title="Color of the fourth band signifying the tolerance value to be applied" data-placement="right">
+            <img class="helpIcon" src="~/images/help.png" alt="Color Band D Help" />
+        </a>
+    </div>
+    <div class="form_button_holder">
+        <input class="form_button" id="btnReset" type="button" value="Reset" />
+        <input class="form_button" id="btnCalculate" type="submit" value="Calculate" />
+    </div>
+    <div class="ohmResults" ohmResults">
+        <div class="row">
+            <label class="field_label">&nbsp;</label>
+            <text class="output_result_field" id="ohmResultOutput"></text>
+        </div>
+    </div>
+    <text class="ohmAlert" id="ohmCalculateValidationMessage"></text>
+</div>
